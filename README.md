@@ -1,7 +1,30 @@
 # Vue 3 + Vite
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+1、yarn preview可以预览打包后的项目
 
-## Recommended IDE Setup
+2、vite.config.js文件里alias配置
+```js
+resolve: {
+    alias: {
+      '@': '/src'
+    }
+  }
+```
+3、配置scss：
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+(1)、安装npm install --save-dev sass；
+
+(2)、vite.config.js:
+
+```js
+ css: {
+  // 配置全局的scss文件,vite不需要安装sass-loader
+  preprocessorOptions: {
+    scss: {
+      additionalData: `
+              @import "@/assets/scss/variable.scss";
+            `
+    }
+  }
+}   
+```
