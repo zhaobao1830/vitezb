@@ -1,5 +1,6 @@
-import { defineConfig, loadEnv } from 'vite'
+import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+const { resolve } = require('path')
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command, mode }) => {
@@ -7,7 +8,7 @@ export default defineConfig(({ command, mode }) => {
     plugins: [vue()],
     resolve: {
       alias: {
-        '@': '/src'
+        '@': resolve(__dirname, 'src')
       }
     },
     css: {
