@@ -1,9 +1,8 @@
 <template>
-  <basic-button></basic-button>
+  <router-view/>
 </template>
 
 <script setup>
-  import BasicButton from '@/components/base/Button/BasicButton'
 </script>
 
 <style>
