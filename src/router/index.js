@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 
-const Home = () => import('@/views/home/Home')
+const Home = () => import('@/views/home/HomeView')
 
 const routes = [
   {
