@@ -1,9 +1,9 @@
 <template>
-  <HelloWorld msg="Hello Vue 3 + Vite" />
+  <basic-button></basic-button>
 </template>
 
 <script setup>
-  import HelloWorld from './components/HelloWorld.vue'
+  import BasicButton from '@/components/base/Button/BasicButton'
 </script>
 
 <style>

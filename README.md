@@ -30,3 +30,7 @@ resolve: {
 ```
 
 4、如果webstorm和vscode不识别配置的别名，就新加jsconfig.json文件，在文件里添加baseUrl和paths文件
+
+5、新加a-button全局组件
+
+6、vite要求引入的文件要加扩展名，如果没有会报vite:import-analysis错，解决办法是：加上扩展名或者在vite.config.js里添加extensions配置
