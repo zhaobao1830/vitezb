@@ -28,3 +28,5 @@ resolve: {
   }
 }   
 ```
+
+4、如果webstorm和vscode不识别配置的别名，就新加jsconfig.json文件，在文件里添加baseUrl和paths文件
