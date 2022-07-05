@@ -3,8 +3,6 @@ import App from './App.vue'
 import router from './router'
 import { setupStore } from '@/store'
 
-import { Button } from 'vant'
-
 import { registerGlobComp } from '@/components/base/registerGlobComp'
 
 const app = createApp(App)
@@ -15,6 +13,6 @@ setupStore(app)
 // 注册全局组件
 registerGlobComp(app)
 
-app.use(Button)
+app
   .use(router)
   .mount('#app')

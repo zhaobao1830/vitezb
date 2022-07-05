@@ -34,3 +34,5 @@ resolve: {
 5、新加a-button全局组件
 
 6、vite要求引入的文件要加扩展名，如果没有会报vite:import-analysis错，解决办法是：加上扩展名或者在vite.config.js里添加extensions配置
+
+7、只要配置了unplugin-vue-components插件，不需要在其他地方引入组件，就可以直接使用
