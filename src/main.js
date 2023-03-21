@@ -5,6 +5,9 @@ import { setupStore } from '@/store'
 
 import { registerGlobComp } from '@/components/base/registerGlobComp'
 
+// 引入全局样式文件
+import '@/assets/scss/index.scss'
+
 const app = createApp(App)
 
 // 配置store
